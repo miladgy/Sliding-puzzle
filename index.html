@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <meta http-equiv="refresh" content="10" > -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <form class="header">
+    <fieldset>
+      <legend>
+        Choose your puzzle and image size:
+      </legend>
+      <div class="size">
+        Image Height:<input type="text" class="imgH"><br>
+        Image Width:<input type="text" class="imgW"><br>
+        <button class="submitSize" type="submit" value="Submit">Submit Size</button>
+      </div>
+      <input type="radio" class="btn4" name="puzzleSize" value="4" checked>
+      <label for="btn4">4</label><br />
+      <input type="radio" class="btn9" name="puzzleSize" value="9">
+      <label for="btn9">9</label><br />
+      <input type="radio" class="btn16" name="puzzleSize" value="16">
+      <label for="btn4">16</label>
+    </fieldset>
+  </form>
+  <div class="main">
+    <!-- <img src="https://source.unsplash.com/random/516x516" id="img" alt="image"> -->
+    <div class="table" id="table" style="display: table;">
+      <div class="row1" style="display: table-row;">
+        <div class=cell11 style="display: table-cell">cell11</div>
+        <div class=cell12 style="display: table-cell">cell12</div>
+        <div class=cell13 style="display: table-cell">cell13</div>
+      </div>
+      <div class="row2" style="display: table-row;">
+        <div class=cell21 style="display: table-cell">cell21</div>
+        <div class=cell22 style="display: table-cell">cell22</div>
+        <div class=cell23 style="display: table-cell">cell23</div>
+      </div>
+      <div class="row3" style="display: table-row;">
+        <div class=cell31 style="display: table-cell">cell13</div>
+        <div class=cell32 style="display: table-cell">cell23</div>
+        <div class=cell33 style="display: table-cell">cell33</div>
+      </div>
+    </div>
+    <script defer src="index.js"></script>
+</body>
+
+</html>
