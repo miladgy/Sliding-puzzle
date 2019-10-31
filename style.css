@@ -16,170 +16,139 @@
   width: 70%;
   margin-left: 20%;
   margin-top: 2%;
+  margin-bottom: 2%;
   padding: 1% 2% 2% 2%;
+  height: auto;
 }
 .puzzleSize {
   align-self: center;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  margin-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 40%;
-  height: 40%,
 }
 .size {
   display: grid;
   grid-column-start: 2;
   grid-row: 1;
 }
-.imgH {
-  grid-column-start: 2;
-  grid-column-end: 2
+.main {
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr; */
 }
-.imgW {
-  grid-column: 2;
-}
+
+
 .main{
+  display: grid;
+  grid-gap: 10px;
+  margin-left: 10%;
   overflow: hidden;
-  border: 2px solid black;
-  width:100%;
-  min-height: 172px;
+  padding: 0;  
+  width:70%;
+  height: 576px;
+  width: 576px;
   clear:both;
+  margin-top: 5%;
   
 }
 .table {
-  background-image: url("../Documents/puzzle.jpeg");
-  background-origin: border-box;
-  background-clip: border-box;
+  display: grid;
+  grid-gap: 10px;
+  margin-left: 10%;
   overflow: hidden;
-  min-height : 172px;
-  clear:both;
-  height: auto;
-  width:100%;
-  border: 1px solid white;
+  padding: 0;  
+  height: 576px;
+  width: 576px;
+  margin-top: 5%;
+  /* height: 100%;
+  width:100%; */
+  border: 2px solid black;
   position: absolute;
-}
-.row1, .row2, .row3{
-
+  clear:both;
+  background-repeat:no-repeat;
 }
 .class11, .class12, .class13, .class21, .class22, .class23, .class31, .class32, .class33 {
   border: 1px solid white;
   cursor: pointer;
+  grid-template-columns: repeat(auto-fit, 188px);
 }
-.class11 {
-  top: 0px; 
-  left: 0px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  display: table-cell;
-  border: 2px solid black;
+.class33 {
+  background-color: #CCC;
+  opacity:0.5;
+}
+.class11 { 
+  /* display: grid;  */
+  background-position: top left; 
+  /* background-size: 564px 564px; */
+  /* display: table-cell; */
 
 }
 .class12 {
-  top: 0px; 
-  left: 172px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
+ 
+  /* display: flex;  */
+  background-position: top center; 
+  /* background-size: 564px 564px;
   display: table-cell;
-  border: 2px solid blue;
-  min-height : 20px;
+  min-height : 20px; */
 }
 .class13 {
-  top: 0px; 
-  left: 314px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  display: table-cell;
-  min-height : 20px;
-  border: 2px solid blue;
+  
+  /* display: flex;  */
+  background-position: right top;
+  /* background-size: 564px 564px; */
+  /* display: table-cell;
+  min-height : 20px; */
 
 
 }
 .class21 {
-  top: 172px; 
-  left: 0px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  display: table-cell;
-  min-height : 20px;
+ 
+  /* display: flex;  */
+  background-position: center left; 
+  /* background-size: 564px 564px; */
+  /* display: table-cell;
+  min-height : 20px; */
 
 }
 .class22 {
-  top: 172px; 
-  left: 172px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  display: table-cell;
-  min-height : 20px;
+  
+  /* display: flex;  */
+  background-position: center center; 
+  /* background-size: 564px 564px; */
+  /* display: table-cell;
+  min-height : 20px; */
 
 }
 .class23 {
-  top: 172px; 
-  left: 314px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
+  /* display: flex;  */
+  background-position: center right; 
+  /* background-size: 564px 564px;
   min-height : 20px;
-  display: table-cell;
+  display: table-cell; */
 
 
 }
-.class31 {
-  top: 314px; 
-  left: 0px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  min-height : 20px;
-  display: table-cell;
+.class31 { 
+  /* display: flex;  */
+  background-position: bottom left; 
+  /* background-size: 564px 564px; */
+  /* min-height : 20px;
+  display: table-cell; */
 
 }
 .class32 {
-  top: 314px; 
-  left: 172px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  min-height : 20px;
-  display: table-cell;
+
+  /* display: flex;  */
+  background-position: bottom center; 
+  /* background-size: 564px 564px; */
+  /* min-height : 20px;
+  display: table-cell; */
 
 }
 .class33 {
-  top: 314px; 
-  left: 314px; 
-  width: 172px; 
-  height: 172px; 
-  display: flex; 
-  background-position: 0px 0px; 
-  background-size: 516px 516px;
-  clear: both;
-  min-height : 20px;
-  display: table-cell;
 
+  /* display: flex;  */
+  background-position: bottom right; 
+  background-color: white;
+  opacity:0.1;
+  /* background-size: 564px 564px; */
+  /* clear: both; */
+  /* min-height : 20px;
+  display: table-cell; */
 }
