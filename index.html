@@ -6,47 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <!-- <meta http-equiv="refresh" content="10" > -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <form class="header">
-    <fieldset>
-      <legend>
-        Choose your puzzle and image size:
-      </legend>
-      <div class="size">
-        Image Height:<input type="text" class="imgH"><br>
-        Image Width:<input type="text" class="imgW"><br>
-        <button class="submitSize" type="submit" value="Submit">Submit Size</button>
+    <form class="header">
+      <fieldset>
+        <legend class="size">
+          Choose your puzzle and image size:
+        </legend>
+        <input type="radio" class="btn9" name="puzzleSize" value="9">
+        <label for="btn9">9</label><br />
+        <input type="radio" class="btn16" name="puzzleSize" value="16">
+        <label for="btn4">16</label>
+      </fieldset>
+    </form>
+    <div class="main">
+      <div class="table" id="table" style="display: table;">
+        <div class="row1" style="display: table-row;">
+          <div class=cell11 style="display: table-cell"><span class="span">cell11</span></div>
+          <div class=cell12 style="display: table-cell"><span class="span">cell12</span></div>
+          <div class=cell13 style="display: table-cell"><span class="span">cell13</span></div>
+        </div>
+        <div class="row2" style="display: table-row;">
+          <div class=cell21 style="display: table-cell"><span class="span">cell21</span></div>
+          <div class=cell22 style="display: table-cell"><span class="span">cell22</span></div>
+          <div class=cell23 style="display: table-cell"><span class="span">cell23</span></div>
+        </div>
+        <div class="row3" style="display: table-row;">
+          <div class=cell31 style="display: table-cell"><span class="span">cell31</span></div>
+          <div class=cell32 style="display: table-cell"><span class="span">cell32</span></div>
+          <div class=cell33 style="display: table-cell"><span class="span">cell33</span></div>
+        </div>
       </div>
-      <input type="radio" class="btn9" name="puzzleSize" value="9">
-      <label for="btn9">9</label><br />
-      <input type="radio" class="btn16" name="puzzleSize" value="16">
-      <label for="btn4">16</label>
-    </fieldset>
-  </form>
-  <img class="img" src="" alt="puzzle image">
-  <div class="main">
-  <div class="table" id="table" style="display: table;">
-      <div class="row1" style="display: table-row;">
-        <div class=cell11 style="display: table-cell"><span>cell11</span></div>
-        <div class=cell12 style="display: table-cell"><span>cell12</span></div>
-        <div class=cell13 style="display: table-cell"><span>cell13</span></div>
-      </div>
-      <div class="row2" style="display: table-row;">
-        <div class=cell21 style="display: table-cell"><span>cell21</span></div>
-        <div class=cell22 style="display: table-cell"><span>cell22</span></div>
-        <div class=cell23 style="display: table-cell"><span>cell23</span></div>
-      </div>
-      <div class="row3" style="display: table-row;">
-        <div class=cell31 style="display: table-cell"><span>cell31</span></div>
-        <div class=cell32 style="display: table-cell"><span>cell32</span></div>
-        <div class=cell33 style="display: table-cell"><span>cell33</span></div>
-      </div>
+      <button class="mix-btn"><b>Mix 'em Up!</b></button>
     </div>
-  </div>
-  <script defer src="index.js"></script>
+    <script defer src="index.js"></script>
 </body>
 
 </html>
