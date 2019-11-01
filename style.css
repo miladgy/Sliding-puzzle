@@ -49,7 +49,8 @@ body {
   grid-template-rows: auto;
   justify-content: center;
   border: 2pz solid orange;
-  box-shadow: 5px 10px 8px 10px #8a5050;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px 10px #8a6650;
   width: 70%;
   margin-left: 20%;
   margin-top: 2%;
@@ -75,7 +76,7 @@ body {
  border-radius: 8px;
 }  */
 
-.mix-btn {
+.mix-btn , .number-btn {
   display: grid;
   grid-column: 3;
   align-content: center;
@@ -88,8 +89,12 @@ body {
   font-family: 'ThinFingers-ThinFingers', Arial, Helvetica, sans-serif;
   font-size: 2rem ;
   font-weight: bold;
-
 }
+.number-btn {
+  margin-top: 35%;
+}
+
+/* !!add animation to the cards!! */
 @keyframes mix-btn {
   0% { transform: rotate(0deg); }
  80% { transform: rotate(0deg); }
@@ -98,17 +103,21 @@ body {
 100% { transform: rotate(0deg); }
 }
 
-.
-.mix-btn:hover {
-  box-shadow: 0 0 20px rgb(255, 227, 202);
-  transition: all .5s;
+
+.mix-btn:hover , .number-btn:hover{
+  box-shadow: 5px 5px 30px 5px #e0ab8a;
+  transition: box-shadow 300ms;
 }
 .main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 5%;
 }
-
+@keyframes span {
+  0% { transform: rotate(0deg) scale(2)}
+  20% { transform: rotate(-45deg) scale(2)}
+  100% { transform: rotate(360deg) scale(2)}
+}
 /* .main {
   grid-gap: 10px;
   margin-left: 10%;
@@ -138,21 +147,28 @@ body {
   position: absolute;
   clear:both;
   background-repeat:no-repeat;
+  /* transform: perspective(500px) rotateX(15deg); */
 }
-.cell11, .cell12, .cell13, .cell21, .cell22, .cell23, .cell31, .cell32, .cell33 {
+.table:hover{
+  box-shadow: 5px 5px 25px 5px #e0ab8a;
+  transition: box-shadow 500ms;
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
   border: 1px solid white;
   cursor: pointer;
   grid-template-columns: repeat(auto-fit, 188px);
+  
+    
 }
 
-.cell11 { 
+.card1 { 
   /* display: grid;  */
   background-position: top left; 
   /* background-size: 564px 564px; */
   /* display: table-cell; */
 
 }
-.cell12 {
+.card2 {
  
   /* display: flex;  */
   background-position: top center; 
@@ -160,7 +176,7 @@ body {
   display: table-cell;
   min-height : 20px; */
 }
-.cell13 {
+.card3 {
   
   /* display: flex;  */
   background-position: right top;
@@ -170,7 +186,7 @@ body {
 
 
 }
-.cell21 {
+.card4 {
  
   /* display: flex;  */
   background-position: center left; 
@@ -179,7 +195,7 @@ body {
   min-height : 20px; */
 
 }
-.cell22 {
+.card5 {
   
   /* display: flex;  */
   background-position: center center; 
@@ -188,7 +204,7 @@ body {
   min-height : 20px; */
 
 }
-.cell23 {
+.card6 {
   /* display: flex;  */
   background-position: center right; 
   /* background-size: 564px 564px;
@@ -197,7 +213,7 @@ body {
 
 
 }
-.cell31 { 
+.card7 { 
   /* display: flex;  */
   background-position: bottom left; 
   /* background-size: 564px 564px; */
@@ -205,7 +221,7 @@ body {
   display: table-cell; */
 
 }
-.cell32 {
+.card8 {
 
   /* display: flex;  */
   background-position: bottom center; 
@@ -214,12 +230,14 @@ body {
   display: table-cell; */
 
 }
-.cell33 {
-
+.card9 {
+  filter: blur(10px);
   /* display: flex;  */
   background-position: bottom right; 
-  background-color: rgb(28, 27, 27);
-  opacity:0.7;
+  /* background-color: rgb(28, 27, 27); */
+  background-color: white;
+  display: "none";
+  /* opacity: 0.1; */
   /* background-size: 564px 564px; */
   /* clear: both; */
   /* min-height : 20px;
