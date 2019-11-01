@@ -52,9 +52,7 @@ window.onload = (e) => {
         }
       }
     })
-  //     sizeSubmitBtn.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  // })
+  
 
 
 
