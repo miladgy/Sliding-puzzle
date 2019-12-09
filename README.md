@@ -1,7 +1,5 @@
 # Sliding-puzzle
 
 This is a game of sliding puzzle.
-Updated the layout!
-span tags have been added so one can change from picture puzzle to 8 game puzzle using numbers! --> not implemented!
-Mixing the cards/cells functionality has been implemented!
-Cards seem to follow a correct pattern while being clicked.
+Every refresh of the webpage will provide you with an image, which will be made into a 3x3 puzzle.
+Once you click the shuffle button, your puzzle is ready to be solved.
